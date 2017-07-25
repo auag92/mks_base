@@ -3,7 +3,8 @@ import math as math
 import numpy.fft as fftmodule
 
 
-def initField(size=(101, 101), n_samples=1, factor=1e-2):
+def initField(seed = 101, size=(101, 101), n_samples=1, factor=1e-2):
+
     X0 = (2 * np.random.random((n_samples,) + size) - 1)*factor
     return X0
 
